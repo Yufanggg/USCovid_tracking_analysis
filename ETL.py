@@ -41,12 +41,14 @@ class ETL:
         # extrat year, month and day out of the date
         # Convert the 'date' column to strings
         df['date'] = df['date'].astype(str)
-        df['year'] = df['date'].str[:4]
-        df['month'] = df['date'].str[4:6]
-        df['day'] = df['date'].str[6:]
+        df['date'] =  pd.to_datetime(df['date'], format='%Y%m%d')
 
         # Create a new DataFrame marking values as 0 (for null) or 1 (for non-null)
         self.null_non_null_table = df.notnull().astype(int)
+        self.null_non_null_table.to_csv('UScovid_tracking_null_non_null.csv', index=False)
+
+        # Change data type
+        # df = df.astype({'date':"int", 'year': "int", 'day':"int"})
         print(df.info())
 
         df.drop(columns=['hash'], inplace=True)
