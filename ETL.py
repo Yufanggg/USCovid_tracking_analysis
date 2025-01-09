@@ -45,6 +45,8 @@ class ETL:
 
         # Create a new DataFrame marking values as 0 (for null) or 1 (for non-null)
         self.null_non_null_table = df.notnull().astype(int)
+        self.null_non_null_table['date'] =  pd.to_datetime(df['date'], format='%Y%m%d')
+        self.null_non_null_table.drop(columns=['hash'], inplace=True)
         self.null_non_null_table.to_csv('./Save/UScovid_tracking_null_non_null.csv', index=False)
 
         # Change data type
