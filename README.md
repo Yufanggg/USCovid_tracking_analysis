@@ -58,13 +58,14 @@ Information on the dataset include:
 ## Project Struture
 
 ### ETL tools 
-To load data from the web, and save it in a database.
+To load data from the web, and save it in a database `us_covid.db` with two separate tables: `UScovid_tracking` and `UScovid_tracking_null_non_null`. The first one is the original dataset. The second one is about the missing data cases. This can be call with the following command: 
 
 ```
 python ETL.py
 ```
 
 ### PowerBI Dashboard:
+To build up a [PowerBI Dashboard](./covid_tracking.pbix) to have a general idea about the data, see a screeshot as following: 
 ![alt text](./Images/covid_tracking.jpg)
 
 ### SQL Queries
