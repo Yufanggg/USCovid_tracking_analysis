@@ -45,7 +45,7 @@ class ETL:
 
         # Create a new DataFrame marking values as 0 (for null) or 1 (for non-null)
         self.null_non_null_table = df.notnull().astype(int)
-        self.null_non_null_table.to_csv('UScovid_tracking_null_non_null.csv', index=False)
+        self.null_non_null_table.to_csv('./Save/UScovid_tracking_null_non_null.csv', index=False)
 
         # Change data type
         # df = df.astype({'date':"int", 'year': "int", 'day':"int"})
@@ -55,7 +55,7 @@ class ETL:
         self.df = df
 
         # Save DataFrame to a CSV file
-        self.df.to_csv('UScovid_tracking.csv', index=False)
+        self.df.to_csv('./Save/UScovid_tracking.csv', index=False)
         print("DataFrame saved to 'UScovid_tracking.csv'")
         # Verify DataFrame content
         # print("DataFrame content before saving to SQL:")
