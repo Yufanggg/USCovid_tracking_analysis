@@ -45,28 +45,16 @@ class ETL:
         df['month'] = df['date'].str[4:6]
         df['day'] = df['date'].str[6:]
 
-        # Save DataFrame to a CSV file
-        df.to_csv('UScovid_tracking.csv', index=False)
-        print("DataFrame saved to 'UScovid_tracking.csv'")
-
         # Create a new DataFrame marking values as 0 (for null) or 1 (for non-null)
         self.null_non_null_table = df.notnull().astype(int)
         print(df.info())
 
-    #     # Change data type
-    #     df = df.astype({'date':"int", 'states': "int", 'positive':"int", 'negative':"int", 'pending': "int",
-    #    'hospitalizedCurrently': "int", 'hospitalizedCumulative': "int", 'inIcuCurrently': "int",
-    #    'inIcuCumulative': "int", 'onVentilatorCurrently': "int", 'onVentilatorCumulative': "int",
-    #    'dateChecked': "int", 'death': "int", 'hospitalized': "int", 'totalTestResults': "int",
-    #    'lastModified': "int", 'recovered': "int", 'total': "int", 'posNeg': "int", 'deathIncrease': "int",
-    #    'hospitalizedIncrease': "int", 'negativeIncrease': "int", 'positiveIncrease': "int",
-    #    'totalTestResultsIncrease': "int"})
-
-        # # Drop unwanted rows
-        # self.df = df[df["states"] == 56]
-        # Drop the unwanted column
         df.drop(columns=['hash'], inplace=True)
         self.df = df
+
+        # Save DataFrame to a CSV file
+        self.df.to_csv('UScovid_tracking.csv', index=False)
+        print("DataFrame saved to 'UScovid_tracking.csv'")
         # Verify DataFrame content
         # print("DataFrame content before saving to SQL:")
         # print(self.df)
