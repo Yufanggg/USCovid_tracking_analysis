@@ -3,6 +3,7 @@ import requests
 from sqlalchemy import create_engine
 
 
+
 class ETL:
     def __init__(self, url):
         self.url = url
@@ -73,6 +74,12 @@ class ETL:
             # save data frame to SQL
             self.df.to_sql('UScovid_tracking', sql_engine, if_exists='replace')
             self.null_non_null_table.to_sql("UScovid_tracking_null_non_null", sql_engine, if_exists = "replace")
+            print("STEP 3: Done LOADING data into database. \n...")
+
+            # save data frame to SQL
+            self.df.to_sql('UScovid_tracking', sql_engine, if_exists='replace')
+            self.null_non_null_table.to_sql("UScovid_tracking_null_non_null", sql_engine, if_exists = "replace")
+
             print("STEP 3: Done LOADING data into database. \n...")
         except Exception as e:
             print("Data load error: " + str(e))
