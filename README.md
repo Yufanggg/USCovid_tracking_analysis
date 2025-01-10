@@ -68,10 +68,12 @@ python ETL.py
 To build up a [PowerBI Dashboard](./covid_tracking.pbix) to have a general idea about the data, see a screeshot as following: 
 ![alt text](./Images/covid_tracking.jpg)
 
+### PowerBI Dashboard:
+To build up a [PowerBI Dashboard](./covid_tracking.pbix) to have a general idea about the data, see a screeshot as following: 
+![alt text](./Images/covid_tracking.jpg)
+
 ### SQL Queries
 
-- `data_cleaning.sql`: a query for data cleaning
-- `data_exploration.sql`: a query for data exploration
 - `query_data_visualization.sql`: a query for data visualization in PowerBI
 
 
