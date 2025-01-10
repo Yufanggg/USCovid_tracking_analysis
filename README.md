@@ -1,5 +1,5 @@
 # COVID-19 pandemic for the US Analysis
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/yufang-w-1295881b5/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&colorB=555)](https://github.com/Yufanggg) <img alt="GitHub" src=" https://img.shields.io/github/license/Yufanggg/USCovid_tracking_analysis?style=for-the-badge">
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/yufang-w-1295881b5/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&colorB=555)](https://github.com/Yufanggg)  <img alt="GitHub" src="https://img.shields.io/github/license/bopith/UnicornCompanies?style=for-the-badge"> 
 
 ## Overview
 This repository contains the ETL (Extract, Transform and load) data into a SQL database SQL queries and the slide presentation for the analytical project on COVID-19 pandemic for the US Analysis
@@ -68,9 +68,6 @@ python ETL.py
 To build up a [PowerBI Dashboard](./covid_tracking.pbix) to have a general idea about the data, see a screeshot as following: 
 ![alt text](./Images/covid_tracking.jpg)
 
-### PowerBI Dashboard:
-To build up a [PowerBI Dashboard](./covid_tracking.pbix) to have a general idea about the data, see a screeshot as following: 
-![alt text](./Images/covid_tracking.jpg)
 
 ### SQL Queries
 
