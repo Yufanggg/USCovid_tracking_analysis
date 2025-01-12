@@ -64,28 +64,25 @@ To load data from the web, and save it in a database `us_covid.db` with two sepa
 python ETL.py
 ```
 
+### SQL Queries
+
+- `call_sql.ipynb`: call through SQL via python to query data for visualization in PowerBI
+
+
 ### PowerBI Dashboard:
 To build up a [PowerBI Dashboard](./covid_tracking.pbix) to have a general idea about the data, see a screeshot as following: 
 ![alt text](./Images/covid_tracking.jpg)
 
 
-### SQL Queries
-
-- `query_data_visualization.sql`: a query for data visualization in PowerBI
-
-
 ## Results
 
 Brief findings of this project are:
-1. Zapier has the biggest return on investment.
-2. It usually takes about 6 years to become a unicorn.
-3. Fintech industry has the most unicorns.
-4. The United States has the most unicorns.
-5. Accel has funded the most unicorns.
+1. Both the positive and negative COVID-19 cases increase along months since February of 2021, but start droping since Feburary of 2021. There was a spike around 0.8bn of postive and negative cases. In addition, there is a high correaltion between the positive and negative COVID-19 cases.
+2. The numbers of currently hospitalized and ICU patients first decrease from March to Septmber, but incrases ever since, and decrease from January of 2021. In addition, there is a high correaltion between the positive and negative COVID-19 cases.
+3. In total, there are 28% missing data in the year of 2020 but no missing data in the year of 2021.
+
+
 
 Please check `uc_covid_results.pdf` for more details and meaningful discussion on query outputs and analytical results.
-
-
-
 
 ## Acknowledgments
