@@ -45,6 +45,9 @@
 # ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
 # (among others).
 
+*.sql linguist-detectable=true
+*.sql linguist-language=sql
+*.sql text
 
 # ===PowerBI====
 # Set default behaviour, in case users don't have core.autocrlf set.
