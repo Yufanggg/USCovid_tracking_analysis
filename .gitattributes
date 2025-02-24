@@ -57,4 +57,5 @@
 *.psd1 text eol=crlf
 *.psm1 text eol=crlf
 *.ps1xml text eol=crlf
+*.pbix text diff=PowerBI
 build.proj text eol=crlf
